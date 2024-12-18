@@ -8,6 +8,9 @@ function App() {
       <div id='header'>
         <h1>RQ Builds</h1>
       </div>
+      <div id='body'>
+
+      </div>
     </div>
   );
 }
