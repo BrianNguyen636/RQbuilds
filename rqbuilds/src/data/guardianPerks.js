@@ -18,5 +18,50 @@ export const PERKS = [
     {
         name: 'Tactical Slap',
         src:'./Guardian/Tactical slap.png'
+    },
+    {
+        name: 'Line Breaker',
+        src: './Guardian/linebreaker.png'
+    },
+    {
+        name: 'Bonk Hammer',
+        src: './Guardian/bonkhammer.png'
+    },
+    {
+        name: 'Green Beret',
+        src: './guardian/greenberet.png'
+    },
+    {
+        name: 'Bite the Bullet',
+        src: './guardian/bitethebullet.png'
+    },
+    {
+        name: 'Robo-Food',
+        src: './guardian/robofood.png'
+    },
+    {
+        name: 'Meteo \'Nade',
+        src: './guardian/meteonade.png'
+    },
+    {
+        name: 'Improved Critical',
+        src: './guardian/Improved crit.png'
+    },
+    {
+        name: 'Top Quality',
+        src: './guardian/topquality.png'
+    },
+    {
+        name: 'Tempo Shot',
+        src: './guardian/temposhot.png'
+    },
+    {
+        name: 'Tiny-Punch',
+        src: './guardian/tinypunch.png'
+    },
+    {
+        name: 'Meteo Weapon',
+        src: './guardian/meteoweapon.png'
     }
+
 ]

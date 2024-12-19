@@ -21,4 +21,7 @@
 #perks{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  border: white 2px solid;
+  background-color: gray;
 }
