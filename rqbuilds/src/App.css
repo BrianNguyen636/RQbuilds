@@ -20,9 +20,8 @@
   color: white;
   flex-direction: row;
   display: flex;
-  margin-left: 100px;
-  margin-top: 50px;
-  
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #perks{
   display: grid;
