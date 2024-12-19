@@ -4,10 +4,11 @@
 #header{
   color: white;
   background-color: rgb(196, 152, 8);
+  
 }
 #subheader{
-  color:white
-
+  color:white;
+  
 }
 #subheader img{
   width: 200px;
@@ -28,5 +29,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 10px;
   border: white 2px solid;
-  background-color: gray;
+  background-color: rgb(46, 46, 46);
+  margin: 10px;
 }

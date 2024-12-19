@@ -8,7 +8,12 @@ import { PERKS as guardianPerks } from './data/guardianPerks';
 function App() {
   const [categories, setCategories] = useState([
     new Category({
-      label: "Category 1"
+      label: "Category 1",
+      perks:[]
+    }),
+    new Category({
+      label: "Category 2",
+      perks:[]
     })
   ]);
   const [botClass, setBotClass] = useState('Guardian');

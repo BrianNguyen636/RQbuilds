@@ -1,0 +1,19 @@
+
+#category {
+    height: 100px;
+    flex-direction: row;
+    display: flex;
+    margin: 15px;
+}
+#categoryLabel{
+    background-color: aquamarine;
+    height: inherit;
+    padding: 10px;
+    padding-top: 30px;
+}
+#categoryGrid{
+    display: grid;
+    height: inherit;
+    background-color: rgb(46, 46, 46);
+    min-width: 500px;
+}
