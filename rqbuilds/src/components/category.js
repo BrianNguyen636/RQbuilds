@@ -5,14 +5,15 @@ export default class Category extends Component {
     constructor(props) {
         super(props)
         this.state = {
-
+            label: props.label,
+            perks: props.perks
         }
     }
 
     render() {
         return (
             <div>
-                Category
+                {this.state.label}
             </div>
         )
     }

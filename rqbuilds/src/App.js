@@ -7,10 +7,14 @@ import { PERKS as guardianPerks } from './data/guardianPerks';
 
 function App() {
   const [categories, setCategories] = useState([
-    new Category()
+    new Category({
+      label: "Category 1"
+    })
   ]);
-  const [perks, setPerks] = useState([]);
   const [botClass, setBotClass] = useState('Guardian');
+
+  const [perks, setPerks] = useState(guardianPerks);
+
 
   return (
     <div className="App">
@@ -36,7 +40,7 @@ function App() {
         </div>
 
         <div id='perks'>
-          {guardianPerks.map(e => {
+          {perks.map(e => {
             return (
               <div>
                 {perk(e)}
