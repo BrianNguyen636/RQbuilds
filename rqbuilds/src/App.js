@@ -10,6 +10,7 @@ function App() {
     new Category()
   ]);
   const [perks, setPerks] = useState([]);
+  const [botClass, setBotClass] = useState('Guardian');
 
   return (
     <div className="App">
@@ -18,7 +19,8 @@ function App() {
       </div>
 
       <div id='subheader'>
-        Class:
+        <img src={'./' + botClass + '_Icon.png'}></img>
+        <h1>{botClass}</h1>
       </div>
 
       <div id='body'>

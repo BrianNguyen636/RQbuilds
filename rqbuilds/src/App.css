@@ -7,6 +7,10 @@
 }
 #subheader{
   color:white
+
+}
+#subheader img{
+  width: 200px;
 }
 #logo{
   width: 100px;
@@ -17,6 +21,7 @@
   display: flex;
   margin-left: 100px;
   margin-top: 50px;
+  
 }
 #perks{
   display: grid;
