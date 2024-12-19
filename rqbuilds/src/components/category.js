@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 
-class Category extends Component {
+export default class Category extends Component {
 
     constructor(props) {
         super(props)
@@ -12,7 +12,7 @@ class Category extends Component {
     render() {
         return (
             <div>
-                
+                Category
             </div>
         )
     }

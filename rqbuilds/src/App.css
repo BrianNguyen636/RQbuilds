@@ -5,6 +5,20 @@
   color: white;
   background-color: rgb(196, 152, 8);
 }
+#subheader{
+  color:white
+}
 #logo{
   width: 100px;
+}
+#body{
+  color: white;
+  flex-direction: row;
+  display: flex;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+#perks{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
