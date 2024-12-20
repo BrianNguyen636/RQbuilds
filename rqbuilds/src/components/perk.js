@@ -3,12 +3,14 @@ import './perk.css'
 export default function perk(props) {
 
     function drag(e) {
-        e.dataTransfer.setData("object", )
+        e.dataTransfer.clearData()
+        e.dataTransfer.setData("text/plain", props.name)
+        console.log(e);
     }
 
     return (
-        <div id="perk" draggable="true">
-            <img src={props.src} id="perkImg"></img>
+        <div className="perk" draggable="true" onDragStart={drag}>
+            <img src={props.src} id="perkImg" draggable='false'></img>
         </div>
     )
 }

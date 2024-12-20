@@ -20,6 +20,19 @@ function App() {
 
   const [perks, setPerks] = useState(guardianPerks);
 
+  function dragOver(e) {        
+    e.preventDefault();
+  }
+  function handleDrop(e) {    
+    if (e.target.id == "perks" || e.target.className == 'categoryGrid' ) {
+        const data = e.dataTransfer.getData("text/plain")
+        e.target.appendChild(document.getElementById(data))
+    } else {
+      const data = e.dataTransfer.getData("text/plain")
+      document.getElementById('perks').appendChild(document.getElementById(data));
+    }
+    // this.perks = this.perks += perk;
+}
 
   return (
     <div className="App">
@@ -44,10 +57,10 @@ function App() {
           })}
         </div>
 
-        <div id='perks'>
+        <div id='perks' onDragOver={e=>dragOver(e)} onDrop={e=>handleDrop(e)}>
           {perks.map(e => {
             return (
-              <div>
+              <div id={e.name}>
                 {perk(e)}
               </div>
             )

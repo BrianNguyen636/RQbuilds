@@ -2,6 +2,8 @@
     width: 90px;
     height: auto;
 }
-#perk{
+.perk{
     margin: 5px;
+    width: fit-content;
+    height: auto;
 }

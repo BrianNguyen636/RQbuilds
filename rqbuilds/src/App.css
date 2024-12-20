@@ -30,4 +30,6 @@
   border: white 2px solid;
   background-color: rgb(46, 46, 46);
   margin: 10px;
+  min-height: 400px;
+  justify-content: baseline;
 }
