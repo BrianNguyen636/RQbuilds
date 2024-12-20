@@ -27,9 +27,9 @@ export default class Category extends Component {
     render() {
         return (
             <div id='category'>
-                <div id='categoryLabel'>
-                    <h5>{this.state.label}</h5>
-                </div>
+                <button id='categoryLabel' className='btn'>
+                    {this.state.label}
+                </button>
                 <div className='categoryGrid' onDragOver={e => this.dragOver(e)} onDrop={e=>this.handleDrop(e)}>
                     {/* {this.state.perks.map(e => {return(
                         <div>

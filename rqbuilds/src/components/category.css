@@ -8,8 +8,7 @@
 #categoryLabel{
     background-color: aquamarine;
     height: inherit;
-    padding: 10px;
-    padding-top: 30px;
+
 }
 .categoryGrid{
     display: grid;
