@@ -4,24 +4,23 @@ import perk from './perk';
 
 export default class Category extends Component {
 
-    dragOver(e) {        
-        e.preventDefault();
-    }
-    handleDrop(e) {    
-        if (e.target.id=="perks" || e.target.className == 'categoryGrid' ) {
-            const data = e.dataTransfer.getData("text/plain")
-            console.log(data);
-            e.target.appendChild(document.getElementById(data))
-        }
-        // this.perks = this.perks += perk;
-    }
-
     constructor(props) {
         super(props)
         this.state = {
             label: props.label,
             perks: props.perks
         }
+    }
+
+    dragOver(e) {        
+        e.preventDefault();
+    }
+    handleDrop(e) {    
+        if (e.target.id=="perks" || e.target.className == 'categoryGrid' ) {
+            const data = e.dataTransfer.getData("text/plain")
+            e.target.appendChild(document.getElementById(data))
+        }
+        // this.perks = this.perks += perk;
     }
 
     render() {

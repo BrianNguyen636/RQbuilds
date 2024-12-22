@@ -2,6 +2,7 @@ export const PERKS = [
     {
         name: 'Stim Bubble',
         src: './Guardian/Stim.png',
+        desc: 'While Bastion is active, increases weapons damage by 30%, firerate by 30% and movement speed by 18%.'
     },
     {
         name: 'Meteo Bubble',

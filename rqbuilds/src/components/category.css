@@ -1,6 +1,6 @@
 
 #category {
-    height: 100px;
+    min-height: 120px;
     flex-direction: row;
     display: flex;
     margin: 15px;
@@ -12,6 +12,7 @@
 }
 .categoryGrid{
     display: grid;
+    padding: 10px;
     height: inherit;
     background-color: rgb(46, 46, 46);
     min-width: 500px;
