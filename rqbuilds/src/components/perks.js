@@ -31,8 +31,8 @@ export default function Perks(props) {
                     )
                 })}
             </div>
-            <button className="btn btn-primary btn-sm">Reset</button>
-            <button className="btn btn-primary btn-sm">Save Build</button>
+
+
 
         </div>
     )

@@ -2,9 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 10px;
-    border: white 2px solid;
     background-color: rgb(46, 46, 46);
     gap: 5px 5px;
-    margin: 10px;
+    margin: 15px;
     min-height: 400px;
   }

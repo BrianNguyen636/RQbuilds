@@ -20,7 +20,9 @@ function App() {
         <div className='btn-group'>
           <button className='btn btn-primary btn-sm'>Change Class</button>
           <button className='btn btn-primary btn-sm'>View Community Builds</button>
+          <button className="btn btn-primary btn-sm">Save Build</button>
           <button className='btn btn-primary btn-sm'>Load Saved Builds</button>
+          <button className="btn btn-primary btn-sm">Reset</button>
         </div>
       </div>
 

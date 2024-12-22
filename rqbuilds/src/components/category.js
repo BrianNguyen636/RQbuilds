@@ -7,6 +7,7 @@ export default class Category extends Component {
     constructor(props) {
         super(props)
         this.state = {
+            id: props.id,
             label: props.label,
             perks: props.perks
         }
