@@ -6,7 +6,8 @@ import Perks from './components/perks';
 
 function App() {
 
-  const [botClass, setBotClass] = useState('Guardian');
+  const classes = ['Guardian','Commando','Ranger','Recon','Engineer','Elementalist','Superbot']
+  const [classID, setClassID] = useState(0);
 
   return (
     <div className="App">
@@ -15,8 +16,8 @@ function App() {
       </div>
 
       <div id='subheader'>
-        <img src={'./' + botClass + '_Icon.png'}></img>
-        <h1>{botClass}</h1>
+        <img src={'./' + classes[classID] + '_Icon.png'}></img>
+        <h1>{classes[classID]}</h1>
         <div className='btn-group'>
           <button className='btn btn-primary btn-sm'>Change Class</button>
           <button className='btn btn-primary btn-sm'>View Community Builds</button>
@@ -29,7 +30,7 @@ function App() {
       <div id='body'>
 
         <Categories></Categories>
-        <Perks class={botClass}></Perks>
+        <Perks classID={classID}></Perks>
 
       </div>
 

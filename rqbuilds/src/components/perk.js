@@ -9,7 +9,7 @@ export default function perk(props) {
 
     return (
         <div className="perk" draggable="true" onDragStart={drag}>
-            <img src={props.src} id="perkImg" draggable='false'></img>
+            <img src={props.src} className="perkImg" id={props.name}></img>
         </div>
     )
 }

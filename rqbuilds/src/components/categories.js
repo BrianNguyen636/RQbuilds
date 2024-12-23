@@ -25,7 +25,8 @@ export default function Categories(props) {
                 )
                 })}
             </div>
-            <button className="btn btn-primary" onClick={()=>{
+
+            <button className="btn btn-primary" disabled={categories.length >= 5} onClick={()=>{
                 let newId = categories.length + 1
                 const newCategory = new Category({
                     id: newId,
@@ -33,7 +34,7 @@ export default function Categories(props) {
                     perks:[]
                 })
                 setCategories([...categories, newCategory])
-            }} disabled={categories.length >= 5}>Add Category</button>
+            }}>Add Category</button>
         </div>
     )
 }
