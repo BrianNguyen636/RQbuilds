@@ -14,18 +14,12 @@ export default function Perks(props) {
     function handleDrop(e) {    
         
         const data = e.dataTransfer.getData("text/plain")
-        if (e.target.id === "perks" || e.target.className === 'categoryGrid' ) {
-            e.target.appendChild(document.getElementById(data))
-        } else {
-            if (e.target.id != data) {
-                document.getElementById('perks').appendChild(document.getElementById(data));
-            } 
-        }
+
     }
 
     return (
         <div>
-            <div id='perks' onDragOver={e=>dragOver(e)} onDrop={e=>handleDrop(e)}>
+            <div id='perks'>
                 {perks.map(e => {
                     return (
                         <div id={e.name} key={e.id}>

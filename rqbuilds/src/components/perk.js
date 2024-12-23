@@ -4,7 +4,7 @@ export default function perk(props) {
 
     function drag(e) {
         e.dataTransfer.clearData()
-        e.dataTransfer.setData("text/plain", props.name)
+        e.dataTransfer.setData("text/plain", props.id)
     }
 
     return (

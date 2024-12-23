@@ -29,7 +29,7 @@ function App() {
 
       <div id='body'>
 
-        <Categories></Categories>
+        <Categories classID={classID}></Categories>
         <Perks classID={classID}></Perks>
 
       </div>

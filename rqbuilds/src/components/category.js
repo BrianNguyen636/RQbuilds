@@ -1,43 +1,36 @@
 import React, {Component, useState} from 'react';
 import './category.css'
 import perk from './perk';
+import { PERKS as perklist } from '../data/perkdata';
 
-export default class Category extends Component {
 
-    constructor(props) {
-        super(props)
-        this.state = {
-            id: props.id,
-            label: props.label,
-            perks: props.perks
-        }
-    }
+export default function Category(props) {
 
-    dragOver(e) {        
+    const [perks, setPerks] = useState(props.perks)
+
+    function dragOver(e) {        
         e.preventDefault();
     }
-    handleDrop(e) {    
-        if (e.target.id=="perks" || e.target.className == 'categoryGrid' ) {
-            const data = e.dataTransfer.getData("text/plain")
-            e.target.appendChild(document.getElementById(data))
-        }
-        // this.perks = this.perks += perk;
+    function handleDrop(e) {    
+        const data = e.dataTransfer.getData("text/plain")
+        const object = perklist[props.classID][data]
+        console.log(object)
+        setPerks([...perks, object])
     }
 
-    render() {
-        return (
-            <div id='category'>
-                <button id='categoryLabel' className='btn'>
-                    {this.state.label}
-                </button>
-                <div className='categoryGrid' onDragOver={e => this.dragOver(e)} onDrop={e=>this.handleDrop(e)}>
-                    {/* {this.state.perks.map(e => {return(
-                        <div>
-                            {e}
-                        </div>
-                    )})} */}
-                </div>
+    return (
+        <div id='category'>
+            <button id='categoryLabel' className='btn'>
+                {props.label}
+            </button>
+            <div className='categoryGrid' onDragOver={e => dragOver(e)} onDrop={e=>handleDrop(e)}>
+                {perks.map(e => {return(
+                    <div id={e.name} key={e.id}>
+                        {perk(e)}
+                    </div>
+                )})}
             </div>
-        )
-    }
+        </div>
+    )
+    
 }
