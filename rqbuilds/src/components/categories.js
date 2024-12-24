@@ -34,7 +34,7 @@ export default function Categories(props) {
             <div id='categories'>
                 {categories.map(e => {
                 return(
-                    <div onDragOver={e => dragOver(e)} onDrop={e=>handleDrop(e)}>
+                    <div key={e.id} onDragOver={e => dragOver(e)} onDrop={e=>handleDrop(e)}>
                         {Category(e)}
                     </div>
                 )})}

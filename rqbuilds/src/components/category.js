@@ -7,12 +7,10 @@ export default function Category(props) {
 
     return (
         <div id='category'>
-            <button id='categoryLabel' className='btn'>
-                {props.label}
-            </button>
+            <input id={'label' + props.id} type='text' className= 'categoryLabel' placeholder={props.label}/>
             <div className='categoryGrid' id={props.id}>
                 {props.perks.map(e => {return(
-                    <div id={e.name} key={e.id}>
+                    <div id={e.name} key={e.id} draggable='false'>
                         {perk(e)}
                     </div>
                 )})}

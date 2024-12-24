@@ -8,14 +8,14 @@ export default function Perks(props) {
     const [perks, setPerks] = useState(perklist[props.classID]);
 
 
-    function dragOver(e) {        
-        e.preventDefault();
-    }
-    function handleDrop(e) {    
+    // function dragOver(e) {        
+    //     e.preventDefault();
+    // }
+    // function handleDrop(e) {    
         
-        const data = e.dataTransfer.getData("text/plain")
+    //     const data = e.dataTransfer.getData("text/plain")
 
-    }
+    // }
 
     return (
         <div>

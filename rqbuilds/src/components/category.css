@@ -5,11 +5,14 @@
     display: flex;
     margin: 15px;
 }
-#categoryLabel{
+.categoryLabel{
     background-color: aquamarine;
     height: inherit;
-
+    width:150px;
+    border: none;
+    text-align: center;
 }
+
 .categoryGrid{
     display: grid;
     padding: 10px;

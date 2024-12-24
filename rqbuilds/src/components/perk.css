@@ -6,3 +6,11 @@
     width: fit-content;
     height: auto;
 }
+.tooltip{
+    visibility: hidden;
+    position: fixed;
+    width:200px;
+    height: fit-content;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
