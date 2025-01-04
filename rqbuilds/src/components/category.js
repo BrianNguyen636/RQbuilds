@@ -1,6 +1,6 @@
 import React, {Component, useState} from 'react';
 import './category.css'
-import perk from './perk';
+import sortablePerk from './sortablePerk';
 
 
 export default function Category(props) {

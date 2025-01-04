@@ -19,6 +19,7 @@ export default function Categories(props) {
         e.preventDefault();
     }
     function handleDrop(e) {    
+        console.log(e.target)
         const data = e.dataTransfer.getData("text/plain")
         const object = perklist[props.classID][data]
         if (e.target.className == "categoryGrid") {

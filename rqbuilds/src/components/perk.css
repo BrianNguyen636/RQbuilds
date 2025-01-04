@@ -5,6 +5,7 @@
 .perk{
     width: fit-content;
     height: auto;
+    cursor: grab;
 }
 .tooltip{
     visibility: hidden;
